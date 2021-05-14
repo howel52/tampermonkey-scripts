@@ -1,8 +1,9 @@
 // ==UserScript==
 // @name         Quick Copy For sf.gg Codes
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @description  Copy snip quickly for sf.gg!
+// @updateURL    https://raw.githubusercontent.com/howel52/tampermonkey-scripts/main/sf.gg.js
 // @author       howel52<wuhao.52@outlook.com>
 // @match        https://segmentfault.com/a/*
 // @match        https://sf.gg/a/*
@@ -19,7 +20,7 @@
     (new Array(10).fill()).map((_, idx) => {
       const gap = 1000 //ms
       const interval = gap * idx + gap;
-        return new Promise((resolve, reject) => {
+        return new Promise((resolve) => {
           setTimeout(() => {
             const snipContainers = toArray(document.querySelectorAll(".hljs code"));
             if (snipContainers.length > 0) {

@@ -4,7 +4,9 @@
 // @version      0.1
 // @description  inject umd scripts
 // @author       howel52<wuhao.52@outlook.com>
+// @updateURL    https://raw.githubusercontent.com/howel52/tampermonkey-scripts/main/inject-umds.js
 // @match        http://localhost/*
+// @match        http://127.0.0.1/*
 // @grant        GM_log
 // ==/UserScript==
 
